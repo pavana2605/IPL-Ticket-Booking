@@ -1,0 +1,166 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: #000033;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #87cefa;
+}
+
+/* Hero Section */
+
+.hero {
+    background-color: #000080;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: white;
+    color: #000080;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero-button:hover {
+    background-color: #dceaff;
+}
+
+/* Match Section */
+
+.matches-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.matches-section h2 {
+    margin-bottom: 25px;
+}
+
+.matches-section > button {
+    background-color: #000080;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.matches-section > button:hover {
+    background-color: #00004d;
+}
+
+/* Match Cards Container */
+
+.matches-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual Match Card */
+
+.match-card {
+    background-color: white;
+    padding: 25px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.match-card h2 {
+    color: #000080;
+    margin-bottom: 15px;
+}
+
+.match-card p {
+    margin: 10px 0;
+}
+
+.match-card button {
+    background-color: #000080;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.match-card button:hover {
+    background-color: #00004d;
+}
+
+/* Mobile Responsive Design */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .matches-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .match-card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+}
